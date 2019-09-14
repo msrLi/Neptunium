@@ -1,0 +1,60 @@
+#-------------------------------------------------------------------------------
+# Copyright (c) 2018-2019, Arm Limited. All rights reserved.
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#
+#-------------------------------------------------------------------------------
+
+{
+  "name": "TF-M generated file list",
+  "type": "generated_file_list",
+  "version_major": 0,
+  "version_minor": 1,
+  "file_list": [
+    {
+        "name": "Secure Partition ID definitions",
+        "short_name": "tfm_partition_defs",
+        "output": "secure_fw/services/tfm_partition_defs.inc"
+    },
+    {
+        "name": "Secure Partition declarations",
+        "short_name": "tfm_partition_list",
+        "output": "secure_fw/services/tfm_partition_list.inc"
+    },
+    {
+        "name": "Secure Service list",
+        "short_name": "tfm_service_list",
+        "output": "secure_fw/services/tfm_service_list.inc"
+    },
+    {
+        "name": "AN521 secure ld file",
+        "short_name": "mps2_an521_s_ld",
+        "output": "platform/ext/target/mps2/an521/gcc/mps2_an521_s.ld"
+    },
+    {
+        "name": "AN519 secure ld file",
+        "short_name": "mps2_an519_s.ld",
+        "output": "platform/ext/target/mps2/an519/gcc/mps2_an519_s.ld"
+    },
+    {
+        "name": "MUSCA-A secure ld file",
+        "short_name": "musca_s.ld",
+        "output": "platform/ext/target/musca_a/Device/Source/gcc/musca_s.ld"
+    },
+    {
+        "name": "MUSCA-B1 secure ld file",
+        "short_name": "musca_s.ld",
+        "output": "platform/ext/target/musca_b1/Device/Source/gcc/musca_s.ld"
+    },
+    {
+        "name": "Secure Veneers C file",
+        "short_name": "tfm_veneers_c",
+        "output": "secure_fw/ns_callable/tfm_veneers.c"
+    },
+    {
+        "name": "Secure Veneers H file",
+        "short_name": "tfm_veneers_h",
+        "output": "interface/include/tfm_veneers.h"
+    }
+  ]
+}
