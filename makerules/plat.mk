@@ -1,6 +1,6 @@
 PLAT_ASFLAGA = __USE_GNU
 PLAT_CCFLAGS = -DCONFIG_TARGET_CPU_${TARGET_CPU} -D_GNU_SOURCE -Wall -Wno-unused -Werror -O3 \
-               -mcpu=cortex-a57 \
+               -mcpu=cortex-m33 \
                -I${PORTING_INSTALL_DIR}/include \
                -I${PORTING_INSTALL_DIR}/include/freetype2 \
                -I${PLATFORM_RELEASE_DIRECTORY}/include
