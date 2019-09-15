@@ -4,7 +4,8 @@
 -include Rules.make
 
 all: sdk
-clean: sdk_clean build_clean
+clean: sdk_clean 
+#build_clean
 
 help:
 	@echo  "uboot:          uboot"
@@ -14,6 +15,12 @@ help:
 
 sdk:
 	@echo "do nothing"
+	make -C SDK_V2.6.2/boards/lpcxpresso55s69;
+
+sdk_clean:
+	make -C SDK_V2.6.2/boards/lpcxpresso55s69 clean
+
+exit:
 	cd SDK_V2.6.2/boards/lpcxpresso55s69/usb_examples/usb_device_msc_sdcard/bm/cm33_core0/armgcc; \
 		./build_all.sh;\
 	cd -;
@@ -26,4 +33,4 @@ build:
 	
 
 build_clean:
-	pushd rt-thread/bsp/stm32/stm32f407-ejd; scons -c; popd;
+# pushd rt-thread/bsp/stm32/stm32f407-ejd; scons -c; popd;
